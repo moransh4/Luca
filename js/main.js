@@ -5,24 +5,43 @@ $(document).ready(function() {
         // Optional parameters
         pagination: '.swiper-pagination',
         paginationClickable: true,
-        direction: 'vertical', 
-        loop: true, 
+        direction: 'vertical',
+        loop: true,
         autoplay: 6000,
-        speed:1000,
+        speed: 1000,
     })
 
-     var mySwiper2 = new Swiper('.swiper-container.shoes', {
+    var mySwiper2 = new Swiper('.swiper-container.shoes', {
         // Optional parameters
-         pagination: '.pag-shoes',
+        pagination: '.pag-shoes',
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         spaceBetween: 30,
         loop: true,
-        
+        paginationType: "custom",
+        paginationCustomRender: function(swiper, current, total) {
+            var names = [];
+            $(".shoes .swiper-wrapper .swiper-slide").each(function(i) {
+                names.push($(this).data("name"));
+            });
+            var text = "<span style='background-color:transperent;text-align: left;width:100%; display:block'>";
+            for (let i = 1; i <= total; i++) {
+                if (current == i) {
+                    text += "<span style='display:inline-block;border-top:3px solid #afd869;margin-right:4px;width: 250px;color:#afd869;padding:5px;'>" + names[i] + "</span>";
+                } else {
+                    text += "<span style='display:inline-block;border-top:3px solid white;margin-right:4px;width: 250px;color:white;padding:5px;'>" + names[i] + "</span>";
+                }
+
+            }
+            text += "</span>";
+            return text;
+        }
+
+
 
     })
 
 
-    
+
 });

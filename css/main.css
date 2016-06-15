@@ -5,7 +5,15 @@
   src: url('../fonts/Quicksand-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Quicksand-Light.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/Quicksand-Light.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Quicksand-Light.svg#svgFontName') format('svg');
   /* Legacy iOS */
 }
+@font-face {
+  font-family: 'Sintony';
+  src: url('../fonts/Sintony-Regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Sintony-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Sintony-Regular.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/Sintony-Regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Sintony-Regular.svg#svgFontName') format('svg');
+  /* Legacy iOS */
+}
 body {
+  font-family: 'Sintony';
   background-color: #272828;
 }
 body .container {
@@ -206,4 +214,66 @@ body .shoes-section .swiper-container.shoes {
 body .shoes-section .swiper-container.shoes .swiper-slide {
   width: 100%;
   height: 800px;
+  position: relative;
+}
+body .shoes-section .swiper-container.shoes .swiper-slide .title {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 94px;
+  color: white;
+}
+body .shoes-section .swiper-container.shoes .swiper-slide .title .t1 {
+  display: block;
+  opacity: 0.5;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+body .shoes-section .swiper-container.shoes .swiper-slide .title .t2 {
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+body .shoes-section .swiper-container.shoes .swiper-slide .shoes-circle {
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  width: 487px;
+  height: 487px;
+  background-color: #a7d45d;
+  box-shadow: 0 15px 16px rgba(0, 0, 0, 0.42), inset 0 0 3px white;
+  border-radius: 50%;
+}
+body .shoes-section .swiper-container.shoes .swiper-slide .shoes-circle .v360 {
+  display: block;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 27px;
+  text-transform: uppercase;
+  position: relative;
+  left: 45%;
+  top: 30px;
+}
+body .shoes-section .swiper-container.shoes .swiper-slide .shoes-circle .logo {
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: 2px solid white;
+  position: relative;
+  left: 49%;
+  top: 33px;
+}
+body .shoes-section .swiper-container.shoes .swiper-slide .shoe {
+  background-image: url(../img/shoe.png);
+  width: 827px;
+  height: 533px;
+  background-size: contain;
+  position: absolute;
+  left: -162px;
+  top: -7px;
 }

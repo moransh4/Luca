@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/Quicksand-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Quicksand-Light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/Quicksand-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/Quicksand-Light.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+body {
+    background-color: #272828;
+    .container {
+        width: 1030px;
+        box-shadow: 24px 0 40px -4px rgba(21, 23, 26, 0.8), -24px 0 40px -4px rgba(21, 23, 26, 0.8);
+    }
+    .logo {
+        border-radius: 50%;
+        border: 4px solid #88b343;
+        background-color: transparent;
+        width: 23px;
+        height: 23px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        left: -4px;
+    }
+    .swiper-pagination-bullet {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #fff;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        width: 11px;
+        height: 11px;
+        margin: 0;
+        // background-color: #000\9;
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid #fff;
+        border-radius: 10px;
+    }
+    .swiper-container-vertical>.swiper-pagination-bullets {
+        right: 10px;
+        top: 32%;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-image: none;
+        font-family: 'Quicksand';
+        color: #add766;
+        font-size: 72px;
+        font-weight: 300;
+        line-height: 27px;
+    }
+   
+    header {
+        .navbar {
+            border-radius: 0;
+            background-color: #272828;
+            height: 86px;
+            margin-bottom: 0px;
+        }
+        .navbar-default .navbar-nav>li>a:focus,
+        .navbar-default .navbar-nav>li>a:hover,
+        .navbar-default .navbar-brand:focus,
+        .navbar-default .navbar-brand:hover {
+            color: white;
+        }
+        .navbar-default .navbar-nav>li>a {
+            color: white;
+            height: 86px;
+            line-height: 55px;
+            text-transform: uppercase;
+        }
+        .navbar-default .navbar-brand {
+            color: white;
+            height: 85px;
+            width: 404px;
+            background-color: #a4d35a;
+            text-align: right;
+            padding-right: 75px;
+            line-height: 55px;
+            margin-right: 279px;
+            &:hover,
+            &:focus {
+                background-color: #a4d35a;
+            }
+        }
+        .navbar-brand {
+            // color: white;
+            font-size: 26px;
+        }
+    }
+    .header-section {
+        width: 100%;
+        // height: 766px;
+        background-color: #abbcc3;
+        position: relative;
+        .carousel-indicators li {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 1px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: #fff;
+        }
+        .carousel-indicators .active {
+            width: 12px;
+            height: 12px;
+            margin: 0;
+            background-color: #000\9;
+            background-color: rgba(0, 0, 0, 0);
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
+        .carousel-indicators {
+            text-align: left;
+        }
+        .spaltter {
+            width: 100%;
+            // height: 100%;
+            position: absolute;
+            top: 0;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .second-section {
+        width: 100%;
+        height: 590px;
+        .swiper-container {
+            width: 886px;
+            height: 598px;
+            z-index: 999;
+            padding-top: 90px;
+            margin: 0 50px;
+        }
+        .swiper-slide {
+            position: relative;
+            height: 510px;
+            // padding: 82px 0 187px 270px;
+            h2 {
+                width: 240px;
+                height: 47px;
+                color: white;
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 26px;
+                margin-bottom: 25px;
+                text-transform: uppercase;
+            }
+            p {
+                width: 342px;
+                height: 122px;
+                color: #abbcc3;
+                font-family: Tahoma;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 27px;
+                margin-bottom: 23px;
+            }
+            .circle {
+                display: block;
+                width: 15px;
+                height: 15px;
+                border: 2px solid #4b5058;
+                border-radius: 50px;
+            }
+            .lines {
+                width: 81px;
+                height: 3px;
+                display: block;
+                margin-bottom: 50px;
+                // position: absolute;
+                // top: -54px;
+                .line1 {
+                    display: block;
+                    width: 40px;
+                    height: 3px;
+                    float: left;
+                    background-color: #4b5058;
+                }
+                .line2 {
+                    display: block;
+                    width: 40px;
+                    height: 3px;
+                    float: right;
+                    background-color: #4b5058;
+                }
+            }
+        }
+    }
+    .shoes-section {
+        width: 100%;
+        height: 800px;
+        background-color: #27292b;
+        position: relative;
+        .bg-shoes {
+            // width: 1600px;
+            height: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/bg-shoes.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .swiper-container.shoes {
+            z-index: 999;
+            width: 886px;
+            height: 100%;
+            .swiper-slide {
+                width: 100%;
+                height: 800px;
+            }
+        }
+    }
+}

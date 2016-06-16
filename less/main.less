@@ -23,8 +23,15 @@
 body {
     font-family: 'Sintony';
     background-color: #272828;
+    .noPaddind {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .paddingLeft {
+        padding-left: 100px;
+    }
     .container {
-        width: 1030px;
+        // width: 1030px;
         box-shadow: 24px 0 40px -4px rgba(21, 23, 26, 0.3), -24px 0 40px -4px rgba(21, 23, 26, 0.3);
     }
     .logo {
@@ -71,18 +78,24 @@ body {
         line-height: 27px;
     }
     .swiper-pagination-custom {
-        left: -71px;
-        bottom: 54px;
-        width: 1029px;
-        position: absolute;
-        z-index: 999;
+        // left: -71px;
+        bottom: 50px;
+        // width: 1029px;
+        // position: absolute;
+        // z-index: 999;
     }
     header {
         .navbar {
             border-radius: 0;
             background-color: #272828;
-            height: 86px;
+            height: auto;
             margin-bottom: 0px;
+        }
+        .navbar-nav {
+            float: none;
+            margin: 0;
+            position: absolute;
+            left: 50%;
         }
         .navbar-default .navbar-nav>li>a:focus,
         .navbar-default .navbar-nav>li>a:hover,
@@ -98,13 +111,12 @@ body {
         }
         .navbar-default .navbar-brand {
             color: white;
-            height: 85px;
+            height: 84px;
             width: 404px;
             background-color: #a4d35a;
             text-align: right;
             padding-right: 75px;
             line-height: 55px;
-            margin-right: 279px;
             &:hover,
             &:focus {
                 background-color: #a4d35a;
@@ -156,15 +168,16 @@ body {
         width: 100%;
         height: 590px;
         .swiper-container {
-            width: 886px;
-            height: 598px;
+            // width: 886px;
+            height: 590px;
             z-index: 999;
-            padding-top: 90px;
+            // padding-top: 90px;
             margin: 0 50px;
         }
         .swiper-slide {
             position: relative;
             height: 510px;
+            padding-top: 90px;
             // padding: 82px 0 187px 270px;
             h2 {
                 width: 240px;
@@ -232,7 +245,8 @@ body {
         }
         .swiper-container.shoes {
             z-index: 999;
-            width: 886px;
+            // width: 886px;
+            width: 100%;
             height: 100%;
             .swiper-slide {
                 width: 100%;
@@ -305,11 +319,12 @@ body {
     .download {
         width: 100%;
         height: 560px;
-        overflow-y: hidden;
+        // overflow-y: hidden;
         background-color: #a6d45b;
         .container {
             height: 100%;
             padding: 94px 0 0 50px;
+            overflow: hidden;
         }
         .content {
             color: white;
@@ -336,6 +351,7 @@ body {
                 border-radius: 4px;
                 font-size: 18px;
                 padding-top: 13px;
+                margin-bottom: 40px;
             }
         }
         .phon-img {
@@ -348,7 +364,7 @@ body {
     }
     footer {
         background-color: #fdfdfd;
-        height: 640px;
+        height: auto;
         .container {
             height: 100%;
             background-color: #fff;
@@ -359,17 +375,116 @@ body {
                 font-weight: 400;
                 line-height: 35px;
                 list-style: none;
-
+                width: 100%;
+                height: 330px;
                 li:nth-child(1) {
                     font-weight: 700;
                     line-height: 35px;
                     text-transform: uppercase;
                 }
-                a{
+                a {
                     text-decoration: none;
                     color: #737c85;
                 }
             }
+            .logo {
+                width: 57px;
+                height: 57px;
+                border: 8px solid #afd568;
+                background-color: transparent;
+                margin: 95px auto;
+                display: block;
+            }
         }
+    }
+}
+
+@media (max-width: 1100px) {
+    body header .navbar-default .navbar-brand {
+        width: 333px;
+    }
+}
+
+@media (max-width: 992px) {
+    body header .navbar-default .navbar-brand {
+        width: 333px;
+    }
+    body .second-section .swiper-slide {
+        height: 767px;
+    }
+    body .second-section {
+        height: 767px;
+    }
+    body .second-section .swiper-container {
+        height: 767px;
+    }
+    body .shoes-section .swiper-container.shoes .swiper-slide .shoes-circle {
+        top: 29%;
+        left: 26%;
+        width: 345px;
+        height: 345px;
+    }
+    body .shoes-section .swiper-container.shoes .swiper-slide .shoe {
+        width: 573px;
+        height: 533px;
+        background-repeat: no-repeat;
+        left: -123px;
+        top: -7px;
+    }
+    body .shoes-section .swiper-container.shoes .swiper-slide .shoes-circle .v360 {
+        font-size: 11px;
+        line-height: 0;
+        left: 44%;
+        top: 21px;
+    }
+    body .shoes-section .swiper-container.shoes .swiper-slide .shoes-circle .logo {
+        width: 12px;
+        height: 12px;
+        left: 49%;
+        top: 25px;
+    }
+    body .shoes-section {
+        height: auto;
+    }
+    body .download {
+        height: 100%;
+        overflow-y: visible;
+    }
+    body .paddingLeft {
+        padding: 0;
+    }
+    body footer .container .logo {
+        margin: 0;
+        top: -81px;
+        left: 45%;
+    }
+    body .download .phon-img {
+        width: 295px;
+        height: 695px;
+    }
+    body .download .container {
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    body header .navbar-default .navbar-brand {
+        width: 258px;
+    }
+    body .download .container {
+        padding: 50px 0 0 50px;
+    }
+    body .download .content h2 {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    body .download .content p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    body .download .phon-img {
+        width: 213px;
+        height: 298px;
+        margin-left: 44px;
     }
 }

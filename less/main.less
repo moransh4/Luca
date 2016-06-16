@@ -274,10 +274,14 @@ body {
                         text-transform: uppercase;
                     }
                 }
+                .shoe-wrapper {
+                    width: 100%;
+                    height: 100%;
+                }
                 .shoes-circle {
                     position: absolute;
-                    top: 20%;
-                    left: 22%;
+                    top: 19%;
+                    left: 27%;
                     width: 487px;
                     height: 487px;
                     background-color: #a7d45d;
@@ -338,6 +342,7 @@ body {
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 24px;
+                margin-bottom: 30px;
             }
             .join {
                 text-align: center;
@@ -399,6 +404,12 @@ body {
     }
 }
 
+@media (max-width: 1201px) {
+    body .shoes-section .swiper-container.shoes .swiper-slide .shoes-circle {
+        left: 24%;
+    }
+}
+
 @media (max-width: 1100px) {
     body header .navbar-default .navbar-brand {
         width: 333px;
@@ -447,8 +458,11 @@ body {
         height: auto;
     }
     body .download {
-        height: 100%;
+            height: auto;
         overflow-y: visible;
+    }
+    body .download .container {
+        padding: 60px 0 0 50px;
     }
     body .paddingLeft {
         padding: 0;
@@ -460,10 +474,14 @@ body {
     }
     body .download .phon-img {
         width: 295px;
-        height: 695px;
+            height: 471px;
     }
     body .download .container {
         height: auto;
+    }
+    body .download .content h2 {
+        font-size: 19px;
+        line-height: 29px;
     }
 }
 
@@ -472,7 +490,7 @@ body {
         width: 258px;
     }
     body .download .container {
-        padding: 50px 0 0 50px;
+        padding: 20px 0 0 37px;
     }
     body .download .content h2 {
         font-size: 17px;
@@ -487,4 +505,47 @@ body {
         height: 298px;
         margin-left: 44px;
     }
+    body .swiper-container-vertical > .swiper-pagination-bullets {
+        right: 10px;
+        top: 17%;
+    }
+    .navbar-toggle {
+        margin-top: 24px;
+    }
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        opacity: 0.8;
+    }
+    body .pContainer {
+        span{
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 517px) {
+body .pContainer {
+        span{
+            font-size: 7px;
+        }
+    }
+
+}
+
+
+
+@media (max-width: 435px) {
+    body footer .container ul li:nth-child(1) {
+    line-height: 21px;
+    border-bottom: 2px solid;
+    width: 130px;
+}
+body footer .container ul{
+    line-height: 24px;
+}
+body .download .content p {
+
+    margin-bottom: 15px;
+}
+
 }

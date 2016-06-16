@@ -372,7 +372,17 @@ body footer .container .logo {
   height: 57px;
   border: 8px solid #afd568;
   background-color: transparent;
-  margin: 95px auto;
+  margin: 95px auto 0;
+  display: block;
+}
+body footer .container .copyrights {
+  width: 169px;
+  height: 12px;
+  opacity: 0.5;
+  color: #737c85;
+  font-size: 12px;
+  line-height: 23px;
+  margin: 30px auto 70px;
   display: block;
 }
 @media (max-width: 1201px) {
@@ -437,9 +447,7 @@ body footer .container .logo {
     padding: 0;
   }
   body footer .container .logo {
-    margin: 0;
-    top: -81px;
-    left: 45%;
+    margin: 0 auto 0;
   }
   body .download .phon-img {
     width: 295px;
@@ -500,7 +508,7 @@ body footer .container .logo {
     width: 130px;
   }
   body footer .container ul {
-    line-height: 24px;
+    line-height: 20px;
   }
   body .download .content p {
     margin-bottom: 15px;

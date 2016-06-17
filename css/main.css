@@ -59,6 +59,9 @@ body .swiper-container-vertical > .swiper-pagination-bullets {
   right: 10px;
   top: 32%;
 }
+body .swiper-button-prev {
+  left: 0;
+}
 body .swiper-button-prev,
 body .swiper-button-next {
   background-image: none;
@@ -175,7 +178,7 @@ body .second-section .swiper-slide h2 {
 }
 body .second-section .swiper-slide p {
   width: 342px;
-  height: 122px;
+  height: auto;
   color: #abbcc3;
   font-family: Tahoma;
   font-size: 14px;
@@ -413,6 +416,7 @@ body footer .container .copyrights {
   }
   body .second-section .swiper-container {
     height: 767px;
+    margin: 0 15px;
   }
   body .shoes-section .swiper-container.shoes .swiper-slide .shoes-circle {
     top: 29%;
@@ -447,7 +451,7 @@ body footer .container .copyrights {
     overflow-y: visible;
   }
   body .download .container {
-    padding: 60px 0 0 50px;
+    padding: 60px 0 0 15px;
   }
   body .paddingLeft {
     padding: 0;
@@ -458,6 +462,7 @@ body footer .container .copyrights {
   body .download .phon-img {
     width: 295px;
     height: 471px;
+    margin: 0 auto;
   }
   body .download .container {
     height: auto;
@@ -519,6 +524,12 @@ body footer .container .copyrights {
   body header .navbar-default .navbar-nav > li > a {
     height: 55px;
     line-height: 36px;
+  }
+  body .second-section .swiper-slide p {
+    width: 100%;
+  }
+  body .second-section .swiper-container {
+    margin: 0 15px;
   }
 }
 @media (max-width: 683px) {
